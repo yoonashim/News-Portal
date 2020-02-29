@@ -1,0 +1,61 @@
+/* Navigation special effects: https://www.youtube.com/watch?v=FEmysQARWFU */
+body{
+    margin: 0;
+    background: white;
+}
+#navbar{
+    width: 80%;
+    margin: 0 auto;
+}
+#content{
+    width: 80%;
+    margin: 0 auto;
+}
+header{
+    background: lightblue;
+}
+header::after{
+    content: '';
+    display: table;
+    clear: both;
+}
+h1{
+    float: left;
+}
+nav{
+    float: right;
+}
+nav ul{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+nav li{
+    display: inline-block;
+    margin-left: 70px;
+    padding-top: 30px;
+    position: relative;
+}
+nav ul li a{
+     color: black;
+     text-decoration: none;
+     text-transform: uppercase;
+}
+nav a:hover{
+    color: black;
+
+}
+nav a::before{
+    content: '';
+    display: block;
+    height: 5px;
+    width: 100%;
+    background-color: white;
+    position: absolute;
+    top: 0;
+    width: 0%;
+    transition: all ease-in-out 400ms;
+}
+nav a:hover::before{
+    width: 100%;
+}
