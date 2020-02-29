@@ -6,7 +6,7 @@ Rapid Prototype Development and Creative Programming
 - CSS3
 - PHP
 
-##D atabase
+## Database
 - MySQL
 
 ## Link
